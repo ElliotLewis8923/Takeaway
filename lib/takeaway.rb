@@ -7,7 +7,11 @@ class Takeaway
 	end
 
 	def place_order(order)
-		return 'You have successfully placed an order.'
+		if order.correct?
+			return 'You have successfully placed an order.'
+		else 
+			raise 'Sorry, the total did not match.'
+		end
 	end
 
 end
