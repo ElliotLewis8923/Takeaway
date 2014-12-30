@@ -18,7 +18,7 @@ class Takeaway
 	end
 
 	private
-	
+
 		def send_sms
 			account_sid = ENV['TWILIO_ACCOUNT_SID']
 			auth_token = ENV['TWILIO_AUTH_TOKEN']
