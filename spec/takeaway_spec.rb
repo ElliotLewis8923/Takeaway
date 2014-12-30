@@ -12,6 +12,7 @@ describe Takeaway do
 	end
 
 	it 'can place an order' do
+		allow(takeaway).to receive(:send_sms) { 'Message sent.' }
 		expect(takeaway.place_order(order)).to eq 'You have successfully placed an order.'
 	end
 
