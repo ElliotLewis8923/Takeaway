@@ -1,6 +1,6 @@
 class Order
 
-	attr_accessor :person, :dishes
+	attr_accessor :person, :total, :dishes
 
 	def initialize(person)
 		@person = person
