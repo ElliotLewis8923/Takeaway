@@ -1,9 +1,2 @@
-class Menu
-
-	attr_accessor :dishes
-
-	def initialize(*dishes)
-		@dishes = dishes
-	end
-
+class Menu < Array
 end
