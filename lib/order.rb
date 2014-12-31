@@ -4,7 +4,11 @@ class Order
 
 	def initialize(person)
 		@person = person
-		@dishes = []
+		@dishes = {}
+	end
+
+	def add_dish(dish)
+		@dishes[dish] ? @dishes[dish] += 1 : @dishes[dish] = 1
 	end
 
 end
